@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  background-color: #1E1E1E;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.headerText {
+  width: 100%;
+  text-align: center;
+  
+}
+.container {
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-bottom: auto;
+  margin-right: auto;
+  max-width: 30%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 5px;
+  background-color: #DADADA;
+}
+
+.list {
+  display:grid;
+  grid-gap: .5rem;
+  grid-template-columns: 100%;
+  padding: 5px
+}
+
+
+textarea {
+  border: none;
+  resize: none;
+  background: none;
+  background-color: #363636;
+  color: #DADADA;
+}
+
+textarea:focus {
+  outline:none;
+}
+
+.add {
+  background-color: #ffffff;
+  border:0px;
+  border-radius: 3px;
+  padding:2px 15px 2px 15px;
+}
+
+.add:hover {
+  background-color: #363636;
+  cursor:pointer;
+}
+
+.del {
+  cursor: pointer;
+}
+
+.edit {
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background-color: #DADADA;
+  border-radius: 10px;
+  padding: 5px;
+  
+}
+
+.search input {
+  border:none;
+  background-color: #DADADA;
+  width: 98%;
+}
+
+.search input:focus {
+  outline: none;
+}
+
+/* Styling the note class here, using flexbox to arrange content within each note. */
+/* note (heh) that all child elements within note div class are going to be affected by this css */
+.note{
+  display: flex;
+  flex-direction: column;
+  background-color: #262626;
+  color: #DADADA;
+  padding: 5px;
+  border-radius: 0px;
+  min-height: 100px;
+  justify-content: space-between;
+  width: 98%;
+}
+
+.note.new{
+  background-color: #363636;
+  min-height:5%;
+
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between
+}
